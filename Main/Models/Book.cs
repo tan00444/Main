@@ -18,6 +18,10 @@ namespace Main.Models
         public virtual Category? category { get; set; }
         [ForeignKey("pu_id")]
         public virtual Category? pulisher { get; set; }
+        [ForeignKey("feed_id")]
+        public virtual Feedback? feedback { get; set; }
+        [ForeignKey("cart_id")]
+        public virtual Cart? cart { get; set; }
 
     }
 }
