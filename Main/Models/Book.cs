@@ -12,8 +12,8 @@ namespace Main.Models
         public string book_des { get; set;}
         public string book_img { get; set;}
         public string book_author { get; set;}
-        public string book_quantity { get; set;}
-        public string book_price { get; set;}
+        public double book_quantity { get; set;}
+        public double book_price { get; set;}
         [ForeignKey("cate_id")]
         public virtual Category? category { get; set; }
         [ForeignKey("pu_id")]
