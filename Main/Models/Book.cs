@@ -16,6 +16,8 @@ namespace Main.Models
         public string book_price { get; set;}
         [ForeignKey("cate_id")]
         public virtual Category? category { get; set; }
+        [ForeignKey("pu_id")]
+        public virtual Category? pulisher { get; set; }
 
     }
 }
