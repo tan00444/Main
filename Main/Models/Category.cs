@@ -10,6 +10,6 @@ namespace Main.Models
         [Required]
         public string cate_name;
         [Required]
-        public virtual ICollection<Product>? product { get; set; }
+        public virtual ICollection<Book>? book { get; set; }
     }
 }
